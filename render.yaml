@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: movie-recommender
+    name: movie-recommendation
     env: python
     plan: free
+    branch: main
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn backend.wsgi:application
-    runtime: python-3.11.9
+    startCommand: python manage.py runserver 0.0.0.0:10000
+    pythonVersion: 3.11.8  # <-- Force Python 3.11 here
+
 
