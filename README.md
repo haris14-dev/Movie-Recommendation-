@@ -76,9 +76,6 @@ Run: `python manage.py collectstatic`
 ### ML model takes too long
 The dataset download and model training happens on first run. Subsequent requests are fast.
 
-## License
-
-MIT License - See LICENSE file for details
 
 ## Contributing
 
