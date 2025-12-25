@@ -1,0 +1,64 @@
+# 📤 FILES TO PUSH TO GITHUB FOR RENDER
+
+## ✅ PUSH THESE FILES (Essential)
+
+```
+requirements.txt          ← Python dependencies
+render.yaml              ← Render configuration (NEW)
+Procfile                 ← Server configuration
+runtime.txt              ← Python version
+.gitignore               ← Git exclusions
+.env.example             ← Environment template (for reference)
+manage.py                ← Django CLI
+backend/                 ← Entire directory
+recommender/             ← Entire directory
+static/                  ← Entire directory
+README.md                ← Documentation
+```
+
+## ❌ DO NOT PUSH THESE FILES
+
+```
+.env                     ← NEVER! Contains secrets
+venv/                    ← Virtual environment (covered by .gitignore)
+__pycache__/             ← Cache (covered by .gitignore)
+db.sqlite3               ← Development database
+ml-latest-small/         ← Large data folder (auto-downloads)
+ml-latest-small.zip      ← Large zip file (auto-downloads)
+*.pyc                    ← Python cache
+.DS_Store                ← Mac OS files
+Thumbs.db                ← Windows files
+```
+
+## Quick Git Commands
+
+```bash
+# Check what will be pushed
+git status
+
+# Verify .env is NOT included
+git check-ignore .env
+
+# Verify venv is NOT included
+git check-ignore venv/
+
+# Push to GitHub
+git push origin main
+```
+
+## Size Check
+
+Total files to push: **~10MB** ✅ (Very reasonable)
+
+## Render Configuration
+
+Your `render.yaml` is already created with:
+- Build command (installs dependencies, collects static files)
+- Release command (runs migrations)
+- Start command (gunicorn server)
+
+Just push it to GitHub and Render will use it automatically!
+
+---
+
+**All set! Follow RENDER_DEPLOYMENT.md for step-by-step instructions.**
