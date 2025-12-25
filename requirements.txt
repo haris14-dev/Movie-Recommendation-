@@ -1,6 +1,6 @@
-Django==6.0
-pandas==2.2.0
-scikit-learn==1.5.0
+Django==5.0.1
+pandas==2.1.4
+numpy==1.26.4
+scikit-learn==1.4.0
 gunicorn==21.2.0
-python-dotenv==1.0.0
-whitenoise==6.5.0
+
