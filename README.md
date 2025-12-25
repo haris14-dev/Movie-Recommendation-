@@ -24,7 +24,7 @@ A Django-based machine learning web application that recommends movies based on 
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/haris14-dev/Movie-Recommendation-.git
    cd movie_app
    ```
 
