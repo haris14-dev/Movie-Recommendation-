@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <title>🎬 Movie Recommender</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <h1>🎬 Movie Recommender</h1>
+        <p>Find movies similar to your favorites</p>
 
-<div class="container">
-    <h1>🎬 Movie Recommender</h1>
-    <p>Find movies similar to your favorites</p>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search a movie..." autocomplete="off">
+            <div id="suggestions" class="suggestions-box"></div>
+        </div>
 
-    <input type="text" id="search" placeholder="Search a movie..." autocomplete="off">
-    <div id="suggestions"></div>
+        <h2>Recommended Movies</h2>
+        <div id="recommendations" class="recommendations-grid"></div>
+    </div>
 
-    <div id="recommendations"></div>
-</div>
-
-<script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>

@@ -1,20 +1,32 @@
+/* Body & overall styling */
 body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: #2c2c2c;
     font-family: 'Segoe UI', sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container */
 .container {
-    width: 500px;
-    margin: 60px auto;
+    width: 800px;
+    margin: 50px auto;
     text-align: center;
 }
 
+/* Header */
 h1 {
-    font-size: 36px;
+    font-size: 42px;
     color: #00e5ff;
+    margin-bottom: 5px;
 }
 
+p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Search input */
 input {
     width: 100%;
     padding: 12px;
@@ -24,6 +36,7 @@ input {
     margin-top: 20px;
 }
 
+/* Suggestions dropdown */
 #suggestions div {
     background: #1e1e1e;
     padding: 10px;
@@ -36,9 +49,31 @@ input {
     background: #00bcd4;
 }
 
+/* Recommendation cards */
+#recommendations {
+    margin-top: 30px;
+}
+
 .card {
     background: #1e1e1e;
     margin-top: 15px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 12px;
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    margin-right: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Poster image */
+.poster {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
